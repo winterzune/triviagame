@@ -1,0 +1,13 @@
+body {
+    background: url("../images/background2.jpg");
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+
+
+.jumbotron {
+   margin-left: 80px;
+   margin-right: 80px;
+   margin-top: 20px;
+}
