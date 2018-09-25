@@ -11,18 +11,301 @@
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 </head>
 <body>
+<!--JS-->    
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="assets/javascript/app.js"></script> 
 
-
-
-<div class="jumbotron">
+<!--MAIN CONTAINER-->
+<div class="jumbotron" class="col-12 col-s-12">
     <h1 class="display-3">Harry Potter Trivia!</h1>
-    <p class="lead">Let's put your Harry Potter knoledge to the test!</p>
+    <p class="lead">Let's put your Potter knoledge to the test!</p>
+    <p id="timeleft"></p>
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+<!--FIRST QUESTION-->
+    <fieldset class="form-group">
+    <legend>Question # 1 <p>What house was Moaning Myrtle in?</p></legend>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 1-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option1" checked=""> Gryffindor
+        </label>
+        </div>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 2-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option2">Ravenclaw
+        </label>
+        </div>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 3-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option3">Hufflepuff
+        </label>
+        </div>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 4-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option4">Slytherin
+        </label></div></fieldset>
+
+<!--Question 2-->
+<fieldset class="form-group">
+    <legend>Question # 2 <p>Who taught the History of Magic lessons?</p></legend>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 1-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option1" checked=""> Professor Binns.
+        </label>
+        </div>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 2-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Professor Quirrel
+        </label>
+        </div>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 3-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Professor Trelawny
+        </label>
+        </div>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 4-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Professor Hopfirk
+        </label></div></fieldset>
+
+
+<!--Question 3--><fieldset class="form-group">
+    <legend>Question # 3 <p>What is a Bezoar?</p></legend>
+    <div class="form-check" class="col-12 col-s-12">
+    <label class="form-check-label">
+<!--OPTION 1-->
+    <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option1" checked=""> A mysterious rock that can ony be found at the bottom of a river; it's used to heal wounds.
+    </label>
+    </div>
+    <div class="form-check" class="col-12 col-s-12">
+    <label class="form-check-label">
+<!--OPTION 2-->
+    <input type="radio" class="form-check-input" name="optionsRadios" class="othertAnswer" value="option2"> a rare magical item used to kill unicorns.
+    </label>
+    </div>
+    <div class="form-check" class="col-12 col-s-12">
+    <label class="form-check-label">
+<!--OPTION 3-->
+    <input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option2">A stone that can be found in a goat's stomach; it heals from most common poisons.
+    </label>
+    </div>
+    <div class="form-check" class="col-12 col-s-12">
+    <label class="form-check-label">
+<!--OPTION 4-->
+    <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">It's the name of the sword Neville used against Voldemort's snake.
+    </label></div>        </fieldset>
+
+
+<!--Question 4-->
+<fieldset class="form-group">
+<legend>Question # 4 <p>What is Dumbledore's full name?</p></legend>
+<div class="form-check" class="col-12 col-s-12">
+<label class="form-check-label">
+<!--OPTION 1-->
+<input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option1" checked=""> Albus Percifrond Garnes Dumbledore.
+</label>
+</div>
+<div class="form-check" class="col-12 col-s-12">
+<label class="form-check-label">
+<!--OPTION 2-->
+<input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Albus Allosyous Dumbledore  Wardonne.
+</label>
+</div>
+<div class="form-check" class="col-12 col-s-12">
+<label class="form-check-label">
+ <!--OPTION 3-->
+<input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Albus Cadmius Warwick Dumbledore.
+</label>
+</div>
+<div class="form-check" class="col-12 col-s-12">
+<label class="form-check-label">
+<!--OPTION 4-->
+<input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2"> Albus Percival Wulfrick Brian Dumbledore.
+</label></div></fieldset>
+        
+        
+<!--Question 5--><fieldset class="form-group">
+<legend>Question # 5 <p>Which of these is an unforgivable curse?</p></legend>
+<div class="form-check" class="col-12 col-s-12">
+<label class="form-check-label">
+<!--OPTION 1-->
+<input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option1" checked=""> Flipendo!
+ </label>
+</div>
+<div class="form-check" class="col-12 col-s-12">
+<label class="form-check-label">
+ <!--OPTION 2-->
+ <input type="radio" class="form-check-input" name="optionsRadios" class="othertAnswer" value="option2"> Sectusempra!
+ </label>
+ </div>
+ <div class="form-check" class="col-12 col-s-12">
+ <label class="form-check-label">
+<!--OPTION 3-->
+<input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option2">Imperio!
+ </label>
+</div>
+<div class="form-check" class="col-12 col-s-12">
+ <label class="form-check-label">
+<!--OPTION 4-->
+ <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Accio!
+ </label></div></fieldset>        
+
+
+ 
+ <!--Question 6--><fieldset class="form-group">
+     <legend>Question # 6 <p>What dragon breed does Harry face in the Goblet of Fire?</p></legend>
+         <div class="form-check" class="col-12 col-s-12">
+         <label class="form-check-label">
+ <!--OPTION 1-->
+         <input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option1" checked=""> Hungarian Horntail.
+         </label>
+         </div>
+         <div class="form-check" class="col-12 col-s-12">
+         <label class="form-check-label">
+ <!--OPTION 2-->
+         <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Chinese Fireball.
+         </label>
+         </div>
+         <div class="form-check" class="col-12 col-s-12">
+         <label class="form-check-label">
+ <!--OPTION 3-->
+         <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Gaelic Snout.
+         </label>
+         </div>
+         <div class="form-check" class="col-12 col-s-12">
+         <label class="form-check-label">
+ <!--OPTION 4-->
+         <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Welch Flyhorn.
+         </label></div></fieldset>
+ 
+ 
+
+ <!--Question 7--><fieldset class="form-group">
+     <legend>Question # 7 <p>Which of these is a horcrux that harry destroyed?</p></legend>
+     <div class="form-check" class="col-12 col-s-12">
+     <label class="form-check-label">
+ <!--OPTION 1-->
+     <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option1" checked=""> The locket.
+     </label>
+     </div>
+     <div class="form-check" class="col-12 col-s-12">
+     <label class="form-check-label">
+ <!--OPTION 2-->
+     <input type="radio" class="form-check-input" name="optionsRadios" class="othertAnswer" value="option2"> The cup.
+     </label>
+     </div>
+     <div class="form-check" class="col-12 col-s-12">
+     <label class="form-check-label">
+ <!--OPTION 3-->
+     <input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option2">The diary.
+     </label>
+     </div>
+     <div class="form-check" class="col-12 col-s-12">
+     <label class="form-check-label">
+ <!--OPTION 4-->
+     <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">The snake.
+     </label>        </div></fieldset>
+ 
+ 
+ <!--Question 8--><fieldset class="form-group">
+ <legend>Question # 8 <p>What does the spell Accio do?</p></legend>
+ <div class="form-check" class="col-12 col-s-12">
+ <label class="form-check-label">
+ <!--OPTION 1-->
+ <input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option1" checked=""> The Summoning Charm. it causes a target at a distance from the caster to levitate or fly over to them. 
+ </label>
+ </div>
+ <div class="form-check" class="col-12 col-s-12">
+ <label class="form-check-label">
+ <!--OPTION 2-->
+ <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">The banishing spell. is a spell that is used in defence against a Boggart.
+ </label>
+ </div>
+ <div class="form-check" class="col-12 col-s-12">
+ <label class="form-check-label">
+  <!--OPTION 3-->
+ <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">The knock-back Jinx. It will allow the caster to 'knock back' an opponent or object 
+ </label>
+ </div>
+ <div class="form-check" class="col-12 col-s-12">
+ <label class="form-check-label">
+ <!--OPTION 4-->
+ <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2"> Is an incantation for a Transfiguration spell that conjures a bouquet of flowers from the end of the caster's wand.
+ </label></div></fieldset>
+         
+ 
+         
+<!--Question 9-->
+<fieldset class="form-group">
+    <legend>Question # 9 <p>What stops Fleur from finishing the second task?</p></legend>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 1-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option1" checked=""> The Grindylows.
+        </label>
+        </div>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 2-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">The Merpeople.
+        </label>
+        </div>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 3-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Doxies and Sprites.
+        </label>
+        </div>
+        <div class="form-check" class="col-12 col-s-12">
+        <label class="form-check-label">
+<!--OPTION 4-->
+        <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">The Thesthrals.
+        </label></div></fieldset>
+
+
+
+<!--Question 10--><fieldset class="form-group">
+    <legend>Question # 10 <p>What's the name of Hermione's pet?</p></legend>
+    <div class="form-check" class="col-12 col-s-12">
+    <label class="form-check-label">
+<!--OPTION 1-->
+    <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option1" checked=""> Arnold the Pigmy Puff.
+    </label>
+    </div>
+    <div class="form-check" class="col-12 col-s-12">
+    <label class="form-check-label">
+<!--OPTION 2-->
+    <input type="radio" class="form-check-input" name="optionsRadios" class="othertAnswer" value="option2"> Pig the Owl.
+    </label>
+    </div>
+    <div class="form-check" class="col-12 col-s-12">
+    <label class="form-check-label">
+<!--OPTION 3-->
+    <input type="radio" class="form-check-input" name="optionsRadios" class="correctAnswer" value="option2">Crookshanks the cat.
+    </label>
+    </div>
+    <div class="form-check" class="col-12 col-s-12">
+    <label class="form-check-label">
+<!--OPTION 4-->
+    <input type="radio" class="form-check-input" name="optionsRadios" class="otherAnswer" value="option2">Trevor the Toad.
+    </label>        
+
+
+        </div></fieldset>
+        <br><br><br>
     <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" href="#" role="button" id="submit">Submit</a>
     </p>
 </div>
+
+
 
         
 </body>
